@@ -33,7 +33,6 @@ def create_image_with_bboxes(img, prediction):
     img_with_bboxes_np = img_with_bboxes.detach().numpy().transpose(1,2,0) 
     return img_with_bboxes_np
 
-## Dashboard
 st.title("Object Detector :tea: :coffee:")
 upload = st.file_uploader(label="Upload Image Here:", type=["png", "jpg", "jpeg"])
 
